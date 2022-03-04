@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Montserrat:wght@400;700&family=Raleway:wght@400;500;700&display=swap');
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color : #FFF;
+    --primary-color : #F5614D;
+    --gradient : #EF7944;
+    --primary-font: Montserrat, Helvetica, Arial, sans-serif;
+    --secondary-font: Raleway, Arial, Helvetica, sans-serif;
+    --small-gap : 1rem;
+    --medium-gap : 3rem;
+    --large-gap : 5rem;
+}
+
+html {
+  color: var(--text-color);
+  font-family: var(--primary-font);
+}
+
+.cta {
+background-image: url(img/introduction_background.jpg);
+  background-size: cover;
+  background-position: center top;
+  padding: 6rem 2rem 3rem;
+}
+
+.cta-header {
+  margin-bottom: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 80px;
+  max-width: 14rem;
+  border-radius: 5rem;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.white-button {
+  margin-bottom: 2rem;
+  border: 3px solid var(--text-color);
+  background-color: transparent;
+}
+
+.colored-button {
+  border: 3px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.material-icons-outlined {
+  transform-origin: center;
+  transform: rotate(90deg);
+}
+
+.badge,
+.discount-title {
+  display: none;
+}
+
+/* Tablette */ 
+@media screen and (min-width: 768px) {
+
+  .cta-header {
+    position: relative;
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-title {
+    border-radius: 10rem;
+    border: 3px solid var(--text-color);
+    border-top: none;
+    padding: 3rem 3rem;
+    position: relative;
+  }
+
+  .badge {
+    display: flex;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    border: 3px solid var(--primary-color);
+    position: absolute;
+    top: -4%;
+    right: -3%;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discount {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    column-gap: 15px;
+  }
+
+  .discount-title {
+    display: block;
+    position: relative;
+    top:-10px;
+    min-width: fit-content;
+  }
+  .discount-left {
+    width: 100%;
+    border-top-left-radius: 4rem;
+    border-top: 3px solid var(--text-color);
+    padding: 3rem 3rem ;
+  }
+
+  .discount-right {
+    width: 100%;
+    border-top-right-radius: 4rem;
+    border-top: 3px solid var(--text-color);
+    padding: 3rem 3rem ;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
